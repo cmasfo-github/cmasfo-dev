@@ -1,8 +1,21 @@
+
 [package]
 name = "cmasfo-dev"
 version = "0.1.0"
 edition = "2021"
+default-run = "cmasfo-cli"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "cmasfo-cli"
+path = "cli/main.rs"
+
+[[bin]]
+name = "cmasfo-gui"
+path = "gui/main.rs"
+
+[lib]
+name = "cmasfo_dev"
+path = "src/lib.rs"
 
 [dependencies]
+
